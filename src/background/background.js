@@ -1,7 +1,6 @@
 // background/background.js
 
-// Example background script for ChromeBot Chat Extension
-// This script runs in the background and can handle events and perform actions.
+
 
 // Event listener for when the extension is installed or updated
 chrome.runtime.onInstalled.addListener((details) => {
@@ -24,7 +23,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   sendResponse({ received: true });
 });
 
-// Example function to interact with the active tab
+// function to interact with the active tab
 function interactWithTab() {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     const activeTab = tabs[0];
