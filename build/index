@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Chatbox</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Chocolate Advisor</h1>
+    <p>Get expert advice on choosing the right chocolate!</p>
+  </div>
+
+  <div id="chatbox">
+    <div id="chatbox-header">Chocolate Advisor
+      <span id="close-button">&times;</span>
+    </div>
+    <div id="chatbox-messages"></div>
+    <div id="chatbox-input">
+      <input type="text" id="user-input" placeholder="Type your question...">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
