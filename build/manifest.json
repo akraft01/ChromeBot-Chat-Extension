@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Chocolate Advisor",
+    "version": "1.0.0",
+    "description": "Get expert advice on choosing the right chocolate.",
+    "permissions": [
+      "activeTab"
+    ],
+    "action": {
+      "default_popup": "index.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["script.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
+  
